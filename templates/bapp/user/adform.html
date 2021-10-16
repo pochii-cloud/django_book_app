@@ -1,0 +1,493 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--favicon-->
+	<link rel="icon" href="{% static 'admini/assets/images/favicon-32x32.png' %}" type="image/png" />
+	<!--plugins-->
+	<link href="{% static 'admini/assets/plugins/vectormap/jquery-jvectormap-2.0.2.css' %}" rel="stylesheet"/>
+	<link href="{% static 'admini/assets/plugins/simplebar/css/simplebar.css' %}" rel="stylesheet" />
+	<link href="{% static 'admini/assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css' %}" rel="stylesheet" />
+	<link href="{% static 'admini/assets/plugins/metismenu/css/metisMenu.min.css' %}" rel="stylesheet" />
+	<!-- loader-->
+	<link href="{% static 'admini/assets/css/pace.min.css' %}" rel="stylesheet" />
+	<script src="{% static 'admini/assets/js/pace.min.js' %}"></script>
+	<!-- Bootstrap CSS -->
+	<link href="{% static 'admini/assets/css/bootstrap.min.css' %}" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link href="{% static 'admini/assets/css/app.css' %}" rel="stylesheet">
+	<link href="{% static 'admini/assets/css/icons.css' %}" rel="stylesheet">
+	
+	<title>Bookdash Book List </title>
+</head>
+
+<body class="bg-theme bg-theme1">
+	<!--wrapper-->
+	<div class="wrapper">
+		<!--start header -->
+	 {% include 'bapp/user/header.html' %}
+
+     <div class="page-wrapper">
+        <div class="page-content">
+            <div class="row">
+                <div class="col-xl-11 mx-auto">
+                    
+                    <div class="card-body">
+                        <h5 class="card-title">Book Details </h5>
+                        <hr/>
+                                
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapsegd" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Book Title  
+                            <img src="https://st.depositphotos.com/3226333/4643/i/600/depositphotos_46433651-stock-photo-interior-of-classic-building.jpg"  width="50"  height="50" alt="">
+
+                          </button>
+                        </h2>
+                                <div id="flush-collapsegd" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <!-- <==================================== add form edit /form of img addon goes here ========================================> -->
+                                        
+                                        
+                                        
+                                        <div class="card-body">
+                                            <div class="card border-top border-0 border-4 border-white">
+                                                <div class="card-body">
+                                                    <div class="border p-4 rounded">
+                                                        <div class="card-title d-flex align-items-center">
+                                                            <div><i class="bx bxs-user me-1 font-22 text-white"></i>
+                                                            </div>
+                                                            <h5 class="mb-0 text-white">Book Details </h5>
+                                                        </div>
+                                                        <hr/>
+                                                        <div class="row mb-3">
+                                                            <label for="inputEnterYourName" class="col-sm-3 col-form-label">Title</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="text" class="form-control" id="inputEnterYourName" placeholder="Enter Title ">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="inputEnterYourName" class="col-sm-3 col-form-label">Code</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="text" class="form-control" id="inputEnterYourName" placeholder="Enter Code ">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                            <label for="inputChoosePassword2" class="col-sm-3 col-form-label">Image</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="file" class="form-control" id="inputPhoneNo2" placeholder="Provide the url">
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mb-3">
+                                                                <!--breadcrumb-->
+                                                                <label for="inputEnterYourName" class="col-sm-3 col-form-label">Description</label>
+
+                                                                <!--end breadcrumb-->
+                                                                <div class="card">
+                                                                    <div class="card-body">
+                                                                        <hr/>
+                                                                        <form method="post">
+                                                                            <textarea id="mytextarea" name="mytextarea">Hello, World!</textarea>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                            
+
+
+
+                                                            </div>
+                                                        </div>
+                                                    
+                                                        <div class="row mb-3">
+                                                            <label for="inputChoosePassword2" class="col-sm-3 col-form-label">Tags</label>
+                                                            <div class="col-sm-9">
+                                                                <input type="email" class="form-control" id="inputChoosePassword2" placeholder="Choose Password">
+                                                            </div>
+                                                        </div>
+                                                
+                                            
+                                                        <div class="row">
+                                                            <label class="col-sm-3 col-form-label"></label>
+                                                            <div class="col-sm-9">
+                                                                <button type="submit" class="btn btn-light px-5">Save</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <!-- <==================================== add form edit /form img addon end here ========================================> -->
+
+                                        
+                                </div>
+                            </div>
+                
+                        </div>
+                    </div>
+                    <!-- <============================== item 1  =============================== > -->
+            
+                </div>
+                
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Imageaddons</h5>
+                            <hr/>
+                                    
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseimg1" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Imag addon object 1  titl_____ <img src="https://st.depositphotos.com/3226333/4643/i/600/depositphotos_46433651-stock-photo-interior-of-classic-building.jpg"  width="50"  height="50" alt="">
+                              </button>
+                            </h2>
+                                    <div id="flush-collapseimg1" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <!-- <==================================== add form edit /form of img addon goes here ========================================> -->
+                                            
+                                            
+                                            
+                                            <div class="card-body">
+                                                <div class="border p-4 rounded">
+                                                    <div class="card-title d-flex align-items-center">
+                                                        <div><i class="bx bxs-user me-1 font-22 text-white"></i>
+                                                        </div>
+                                                        <h5 class="mb-0 text-white">Img addon objec1 title  </h5>
+                                                    </div>
+                                                    <hr/>
+                                                    <div class="row mb-3">
+                                                        <label for="inputEnterYourName" class="col-sm-3 col-form-label">Enter the title </label>
+                                                        <div class="col-sm-9">
+                                                            <input type="text" class="form-control" id="inputEnterYourName" placeholder="Enter Your Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label for="inputPhoneNo2" class="col-sm-3 col-form-label">Url</label>
+                                                        <div class="col-sm-9">
+                                                            <input type="url" class="form-control" id="inputPhoneNo2" placeholder="Provide the url">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label for="inputChoosePassword2" class="col-sm-3 col-form-label">Image</label>
+                                                        <div class="col-sm-9">
+                                                            <input type="file" class="form-control" id="inputPhoneNo2" placeholder="Provide the url">
+                                                        </div>
+                                                    </div>
+                                        
+                                        
+                                                    <div class="row">
+                                                        <label class="col-sm-3 col-form-label"></label>
+                                                        <div class="col-sm-9">
+                                                            <button type="submit" class="btn btn-light px-5">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                            
+                                            <!-- <==================================== add form edit /form img addon end here ========================================> -->
+
+                                            
+                                    </div>
+                                </div>
+                    
+                            </div>
+                        </div>
+                        <!-- <============================== item 1  =============================== > -->
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseimg2" aria-expanded="false" aria-controls="flush-collapseOne">
+                            img addon object 2 title_____  <img src="https://st.depositphotos.com/3226333/4643/i/600/depositphotos_46433651-stock-photo-interior-of-classic-building.jpg"  width="50"  height="50" alt="">
+                          </button>
+                        </h2>
+                                <div id="flush-collapseimg2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <!-- <==================================== add form edit /form of img addon goes here ========================================> -->
+                                        
+                                        
+                                        
+                                        <div class="card-body">
+                                            <div class="border p-4 rounded">
+                                                <div class="card-title d-flex align-items-center">
+                                                    <div><i class="bx bxs-user me-1 font-22 text-white"></i>
+                                                    </div>
+                                                    <h5 class="mb-0 text-white">url addon 1 </h5>
+                                                </div>
+                                                <hr/>
+                                                <div class="row mb-3">
+                                                    <label for="inputEnterYourName" class="col-sm-3 col-form-label">Enter the title </label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" id="inputEnterYourName" placeholder="Enter Your Name">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label for="inputPhoneNo2" class="col-sm-3 col-form-label">Url</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="url" class="form-control" id="inputPhoneNo2" placeholder="Provide the url">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label for="inputChoosePassword2" class="col-sm-3 col-form-label">Image</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="file" class="form-control" id="inputPhoneNo2" placeholder="Provide the url">
+                                                    </div>
+                                                </div>
+                                    
+                                    
+                                                <div class="row">
+                                                    <label class="col-sm-3 col-form-label"></label>
+                                                    <div class="col-sm-9">
+                                                        <button type="submit" class="btn btn-light px-5">Add</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <!-- <==================================== add form edit /form img addon end here ========================================> -->
+
+                                        
+                                </div>
+                            </div>
+                
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">url addons</h5>
+                            <hr/>
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseurlOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Url addon object 1  <img src="https://st.depositphotos.com/3226333/4643/i/600/depositphotos_46433651-stock-photo-interior-of-classic-building.jpg"  width="50"  height="50" alt="">
+                              </button>
+                            </h2>
+                                    <div id="flush-collapseurlOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">
+                                            <!-- <==================================== add form edit /form of img addon goes here ========================================> -->
+                                            
+                                            
+                                            
+                                            <div class="card-body">
+                                                <div class="border p-4 rounded">
+                                                    <div class="card-title d-flex align-items-center">
+                                                        <div><i class="bx bxs-user me-1 font-22 text-white"></i>
+                                                        </div>
+                                                        <h5 class="mb-0 text-white">url addon 1 </h5>
+                                                    </div>
+                                                    <hr/>
+                                                    <div class="row mb-3">
+                                                        <label for="inputEnterYourName" class="col-sm-3 col-form-label">Enter the title </label>
+                                                        <div class="col-sm-9">
+                                                            <input type="text" class="form-control" id="inputEnterYourName" placeholder="Enter Your Name">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label for="inputPhoneNo2" class="col-sm-3 col-form-label">Url</label>
+                                                        <div class="col-sm-9">
+                                                            <input type="url" class="form-control" id="inputPhoneNo2" placeholder="Provide the url">
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mb-3">
+                                                        <label for="inputChoosePassword2" class="col-sm-3 col-form-label">Image</label>
+                                                        <div class="col-sm-9">
+                                                            <input type="file" class="form-control" id="inputPhoneNo2" placeholder="Provide the url">
+                                                        </div>
+                                                    </div>
+                                        
+                                        
+                                                    <div class="row">
+                                                        <label class="col-sm-3 col-form-label"></label>
+                                                        <div class="col-sm-9">
+                                                            <button type="submit" class="btn btn-light px-5">Add</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                            
+                                            
+                                            <!-- <==================================== add form edit /form img addon end here ========================================> -->
+
+                                            
+                                    </div>
+                                </div>
+                    
+                            </div>
+                        </div>
+                        <div class="accordion accordion-flush" id="accordionFlushExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="flush-headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseurl2" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Url addon object 1  <img src="https://st.depositphotos.com/3226333/4643/i/600/depositphotos_46433651-stock-photo-interior-of-classic-building.jpg"  width="50"  height="50" alt="">
+                          </button>
+                        </h2>
+                                <div id="flush-collapseurl2" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                    <div class="accordion-body">
+                                        <!-- <==================================== add form edit /form of img addon goes here ========================================> -->
+                                        
+                                        
+                                        
+                                        <div class="card-body">
+                                            <div class="border p-4 rounded">
+                                                <div class="card-title d-flex align-items-center">
+                                                    <div><i class="bx bxs-user me-1 font-22 text-white"></i>
+                                                    </div>
+                                                    <h5 class="mb-0 text-white">url addon 1 </h5>
+                                                </div>
+                                                <hr/>
+                                                <div class="row mb-3">
+                                                    <label for="inputEnterYourName" class="col-sm-3 col-form-label">Enter the title </label>
+                                                    <div class="col-sm-9">
+                                                        <input type="text" class="form-control" id="inputEnterYourName" placeholder="Enter Your Name">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label for="inputPhoneNo2" class="col-sm-3 col-form-label">Url</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="url" class="form-control" id="inputPhoneNo2" placeholder="Provide the url">
+                                                    </div>
+                                                </div>
+                                                <div class="row mb-3">
+                                                    <label for="inputChoosePassword2" class="col-sm-3 col-form-label">Image</label>
+                                                    <div class="col-sm-9">
+                                                        <input type="file" class="form-control" id="inputPhoneNo2" placeholder="Provide the url">
+                                                    </div>
+                                                </div>
+                                    
+                                    
+                                                <div class="row">
+                                                    <label class="col-sm-3 col-form-label"></label>
+                                                    <div class="col-sm-9">
+                                                        <button type="submit" class="btn btn-light px-5">Add</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        
+                                        
+                                        <!-- <==================================== add form edit /form img addon end here ========================================> -->
+
+                                        
+                                </div>
+                            </div>
+                
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!--end row-->
+        </div>
+    </div>
+    <!--end page wrapper -->
+    <!--start overlay-->
+    <div class="overlay toggle-icon"></div>
+    <!--end overlay-->
+    <!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+    <!--End Back To Top Button-->
+    <footer class="page-footer">
+        <p class="mb-0">Copyright © 2021. All right reserved.</p>
+    </footer>
+</div>
+
+
+
+		<!--end overlay-->
+		<!--Start Back To Top Button--> <a href="javaScript:;" class="back-to-top"><i class='bx bxs-up-arrow-alt'></i></a>
+		<!--End Back To Top Button-->
+		<footer class="page-footer">
+			<p class="mb-0">Copyright © 2021. All right reserved.</p>
+		</footer>
+	</div>
+	<!--end wrapper-->
+	<!--start switcher-->
+	<div class="switcher-wrapper">
+		<div class="switcher-btn"> <i class='bx bx-cog bx-spin'></i>
+		</div>
+		<div class="switcher-body">
+			<div class="d-flex align-items-center">
+				<h5 class="mb-0 text-uppercase">Theme Customizer</h5>
+				<button type="button" class="btn-close ms-auto close-switcher" aria-label="Close"></button>
+			</div>
+			<hr/>
+			<p class="mb-0">Gaussian Texture</p>
+			  <hr>
+			  
+			  <ul class="switcher">
+				<li id="theme1"></li>
+				<li id="theme2"></li>
+				<li id="theme3"></li>
+				<li id="theme4"></li>
+				<li id="theme5"></li>
+				<li id="theme6"></li>
+			  </ul>
+               <hr>
+			  <p class="mb-0">Gradient Background</p>
+			  <hr>
+			  
+			  <ul class="switcher">
+				<li id="theme7"></li>
+				<li id="theme8"></li>
+				<li id="theme9"></li>
+				<li id="theme10"></li>
+				<li id="theme11"></li>
+				<li id="theme12"></li>
+				<li id="theme13"></li>
+				<li id="theme14"></li>
+				<li id="theme15"></li>
+			  </ul>
+		</div>
+	</div>
+	<!--end switcher-->
+	<!-- Bootstrap JS -->
+	<script src="{% static 'admini/assets/js/bootstrap.bundle.min.js' %}"></script>
+	<!--plugins-->
+	<script src="{% static 'admini/assets/js/jquery.min.js' %}"></script>
+	<script src="{% static 'admini/assets/plugins/simplebar/js/simplebar.min.js' %}"></script>
+	<script src="{% static 'admini/assets/plugins/metismenu/js/metisMenu.min.js' %}"></script>
+	<script src="{% static 'admini/assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js' %}"></script>
+	<script src="{% static 'admini/assets/plugins/chartjs/js/Chart.min.js' %}"></script>
+	<script src="{% static 'admini/assets/plugins/vectormap/jquery-jvectormap-2.0.2.min.js' %}"></script>
+    <script src="{% static 'admini/assets/plugins/vectormap/jquery-jvectormap-world-mill-en.js' %}"></script>
+	<script src="{% static 'admini/assets/plugins/jquery.easy-pie-chart/jquery.easypiechart.min.js' %}"></script>
+	<script src="{% static 'admini/assets/plugins/sparkline-charts/jquery.sparkline.min.js' %}"></script>
+	<script src="{% static 'admini/assets/plugins/jquery-knob/excanvas.js' %}"></script>
+	<script src="{% static 'admini/assets/plugins/jquery-knob/jquery.knob.js' %}"></script>
+	  <script>
+		  $(function() {
+			  $(".knob").knob();
+		  });
+	  </script>
+	  <script src="{% static 'admini/assets/js/index.js' %}"></script>
+	<!--app JS-->
+	<script src="{% static 'admini/assets/js/app.js' %}"></script>
+
+	<!--plugins-->
+	<script src='https://cdn.tiny.cloud/1/vdqx2klew412up5bcbpwivg1th6nrh3murc6maz8bukgos4v/tinymce/5/tinymce.min.js' referrerpolicy="origin">
+	</script>
+	<script>
+		tinymce.init({
+		  selector: '#mytextarea'
+		});
+	</script>
+	<!--app JS-->
+</body>
+
+</html>

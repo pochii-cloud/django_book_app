@@ -1,0 +1,117 @@
+{% load static %}
+
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--favicon-->
+	<link rel="icon" href="{% static 'admini/assets/images/favicon-32x32.png' %}" type="image/png" />
+	<!--plugins-->
+	<link href="{% static 'admini/assets/plugins/simplebar/css/simplebar.css' %}" rel="stylesheet" />
+	<link href="{% static 'admini/assets/plugins/perfect-scrollbar/css/perfect-scrollbar.css' %}" rel="stylesheet" />
+	<link href="{% static 'admini/assets/plugins/metismenu/css/metisMenu.min.css' %}" rel="stylesheet" />
+	<!-- loader-->
+	<link href="{% static 'admini/assets/css/pace.min.css' %}" rel="stylesheet" />
+	<script src="{% static 'admini/assets/js/pace.min.js' %}"></script>
+	<!-- Bootstrap CSS -->
+	<link href="{% static 'admini/assets/css/bootstrap.min.css' %}" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	<link href="{% static 'admini/assets/css/app.css' %}" rel="stylesheet">
+	<link href="{% static 'admini/assets/css/icons.css' %}" rel="stylesheet">
+	
+	<title>Book App</title>
+</head>
+
+<body class="bg-theme bg-theme1">
+	<!--wrapper-->
+	<div class="wrapper">
+
+
+		<div class="error-404 d-flex align-items-center justify-content-center">
+			<div class="container">
+				<div class="card py-5">
+					<div class="row g-0">
+						<div class="col col-xl-5">
+							<div class="card-body p-4">
+							<h2><span class="text-white">Purchase has been Completed !!!</span></h2>
+							<h3 class="font-weight-bold">It's time to develop your book</h3>
+                            <hr>
+							<p>Subscription start : {{ current_period_start }}</p>
+							<p>Subscription End   : {{ current_period_end }} </p>
+							<p>Coupon Plan        : {{ place_plan }}</p>
+							<p>Subscription ID    : {{ subscription_id }}</p>
+							<p>Invoice ID         : {{ invoice }}</p>
+							<div class="mt-5"> <a href="{% url 'bapp:homeview' %}" class="btn btn-light btn-lg px-md-5 radius-30">Check</a>
+									<a href="{% url 'bapp:homeview' %}" class="btn btn-light btn-lg ms-3 px-md-5 radius-30">Help</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-xl-7">
+							<img src="{% static 'admini/assets/images/completed.png' %}" class="img-fluid" alt="">
+						</div>
+					</div>
+					<!--end row-->
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+    <footer class="page-footer">
+        <p class="mb-0">Copyright © 2021. All right reserved.</p>
+    </footer>
+	<!--end wrapper-->
+	<!--start switcher-->
+	<div class="switcher-wrapper">
+		<div class="switcher-btn"> <i class='bx bx-cog bx-spin'></i>
+		</div>
+		<div class="switcher-body">
+			<div class="d-flex align-items-center">
+				<h5 class="mb-0 text-uppercase">Theme Customizer</h5>
+				<button type="button" class="btn-close ms-auto close-switcher" aria-label="Close"></button>
+			</div>
+			<hr/>
+			<p class="mb-0">Gaussian Texture</p>
+			  <hr>
+			  
+			  <ul class="switcher">
+				<li id="theme1"></li>
+				<li id="theme2"></li>
+				<li id="theme3"></li>
+				<li id="theme4"></li>
+				<li id="theme5"></li>
+				<li id="theme6"></li>
+			  </ul>
+               <hr>
+			  <p class="mb-0">Gradient Background</p>
+			  <hr>
+			  
+			  <ul class="switcher">
+				<li id="theme7"></li>
+				<li id="theme8"></li>
+				<li id="theme9"></li>
+				<li id="theme10"></li>
+				<li id="theme11"></li>
+				<li id="theme12"></li>
+				<li id="theme13"></li>
+				<li id="theme14"></li>
+				<li id="theme15"></li>
+			  </ul>
+		</div>
+	</div>
+	<!--end switcher-->
+	<!-- Bootstrap JS -->
+	<script src="{% static 'admini/assets/js/bootstrap.bundle.min.js' %}"></script>
+	<!--plugins-->
+	<script src="{% static 'admini/assets/js/jquery.min.js' %}"></script>
+	<script src="{% static 'admini/assets/plugins/simplebar/js/simplebar.min.js' %}"></script>
+	<script src="{% static 'admini/assets/plugins/metismenu/js/metisMenu.min.js' %}"></script>
+	<script src="{% static 'admini/assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js' %}"></script>
+	<!--app JS-->
+	<script src="{% static 'admini/assets/js/app.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--favicon-->
+		<link rel="icon" href="{% static 'admini/assets/images/favicon-32x32.png' %}" type="image/png" />
+		<!-- loader-->
+		<link href="{% static 'admini/assets/css/pace.min.css' %}" rel="stylesheet" />
+		<script src="{% static 'admini/assets/js/pace.min.js' %}"></script>
+		<!-- Bootstrap CSS -->
+		<link href="{% static 'admini/assets/css/bootstrap.min.css' %}" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+		<link href="{% static 'admini/assets/css/app.css' %}" rel="stylesheet">
+		<link href="{% static 'admini/assets/css/icons.css' %}" rel="stylesheet">
+		<title>Book App  -write your book </title>
+	</head>
+
+<body class="bg-theme bg-theme1">
+	<!--wrapper-->
+	<div class="wrapper">
+		<div class="d-flex align-items-center justify-content-center my-5 my-lg-0">
+			<div class="container">
+				<div class="row row-cols-1 row-cols-lg-2 row-cols-xl-2">
+					<div class="col mx-auto">
+						<div class="my-4 text-center">
+							<img src="{% static 'admini/assets/images/logo-img.png' %}" width="180" alt="" />
+						</div>
+						<div class="card">
+							<div class="card-body">
+								<div class="border p-4 rounded">
+									<div class="text-center">
+										<h3 class="">Sign Up</h3>
+										<p>Already have an account? <a href="{% url 'bapp:login' %}">Sign in here</a>
+										</p>
+									</div>
+									<div style="color:rgb(240, 234, 234)">
+										{% include 'bapp/user/alert.html' with messages=messages %}
+					
+									</div>
+									<div class="login-separater text-center mb-4"> <span> SIGN UP WITH EMAIL</span>
+										<hr/>
+									</div>
+									<div class="form-body">
+										<form method="POST" class="row g-3">
+											{% csrf_token %}
+
+											<div class="col-12">
+												<label for="inputEmailAddress" class="form-label">Email Address</label>
+												<input name="email" type="email" class="form-control"  placeholder="example@user.com">
+											</div>
+											<div class="col-12">
+												<label for="inputChoosePassword" class="form-label">Enter Password</label>
+												<div class="input-group" id="show_hide_password">
+													<input type="password" name="password1" class="form-control border-end-0"  placeholder="Enter Password"> <a href="javascript:;" class="input-group-text bg-transparent"><i class='bx bx-hide'></i></a>
+												</div>
+											</div>
+											<div class="col-12">
+												<label for="inputChoosePassword" class="form-label">Re Enter Password</label>
+												<div class="input-group" id="show_hide_password">
+													<input type="password" name="password2" class="form-control border-end-0"  placeholder="Enter Password"> <a href="javascript:;" class="input-group-text bg-transparent"><i class='bx bx-hide'></i></a>
+												</div>
+											</div>
+
+
+											<div class="col-12">
+												<div class="d-grid">
+													<button type="submit" id="sign_up" name="submit" value="sign_up" class="btn btn-light"><i class='bx bx-user'></i>Sign up</button>
+												</div>
+											</div>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--end row-->
+			</div>
+		</div>
+	</div>
+	<!--end wrapper-->
+
+
+
+	<!--plugins-->
+	<script src="{% static 'admini/assets/js/jquery.min.js' %}"></script>
+
+
+</body>
+
+</html>

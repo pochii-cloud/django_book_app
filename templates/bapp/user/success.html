@@ -1,0 +1,86 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!--favicon-->
+		<link rel="icon" href="{% static 'admini/assets/images/favicon-32x32.png' %}" type="image/png" />
+		<!-- loader-->
+		<link href="{% static 'admini/assets/css/pace.min.css' %}" rel="stylesheet" />
+		<script src="{% static 'admini/assets/js/pace.min.js' %}"></script>
+		<!-- Bootstrap CSS -->
+		<link href="{% static 'admini/assets/css/bootstrap.min.css' %}" rel="stylesheet">
+	    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+		<link href="{% static 'admini/assets/css/app.css' %}" rel="stylesheet">
+		<link href="{% static 'admini/assets/css/icons.css' %}" rel="stylesheet">
+		<title>Book App  -write your book </title>
+	</head>
+
+<body class="bg-theme bg-theme1">
+	<!--wrapper-->
+	<div class="wrapper">
+		<div class="d-flex align-items-center justify-content-center my-5 my-lg-0">
+			<div class="container">
+				<div class="row row-cols-1 row-cols-lg-2 row-cols-xl-2">
+					<div class="col mx-auto">
+						<div class="my-4 text-center">
+							<img src="{% static 'admini/assets/images/logo-img.png' %}" width="180" alt="" />
+						</div>
+						<div class="card">
+							<div class="card-body">
+								<div class="border p-4 rounded">
+									<div class="text-center">
+										<h3 class="">Yeah !!! You Did it !</h3>
+										{% include 'bapp/user/alert.html' with messages=messages %}
+										</p>
+									</div>
+									<div style="color:rgb(240, 234, 234)">
+										
+										<div class="table-responsive">
+											<table class="table" style="margin: auto; padding: auto;">
+													
+													<td >
+															<tr> <h2>Subscription start</h2> <h3></h3> </tr>
+															<tr> <h2>Subscription End</h2>  <h3></h3> </tr>
+															<tr> <h2>Coupon Plan</h2>  <h3></h3> </tr>
+															<tr> <h2>Subscription ID</h2> <h3></h3> </tr>
+															<tr> <h2>Invoice ID</h2>  <h3></h3> </tr>
+													</td>
+													
+											</table>
+										  </div>
+									</div>
+									{% if user.is_superuser %}
+									<a href="#">
+										<div class="login-separater text-center mb-4"> <span> Click Here To Check Store</span>
+										</a> <hr/>
+									{% else %}
+									<a href="#">	<div class="login-separater text-center mb-4"> <span> Click Here To Check Store</span>
+									</a> <hr/>
+									{% endif %}
+									
+								
+									</div>
+								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--end row-->
+			</div>
+		</div>
+	</div>
+	<!--end wrapper-->
+
+
+	<!--plugins-->
+	<script src="{% static 'admini/assets/js/jquery.min.js' %}"></script>
+
+
+</body>
+
+</html>

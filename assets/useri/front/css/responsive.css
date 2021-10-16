@@ -1,0 +1,155 @@
+
+@media screen and (max-width:1400px) {
+    .content-section {
+        display: flex;
+        justify-content: space-around;
+       /* height: 100vh;*/
+        overflow: auto;
+        align-items: flex-start;
+    }
+
+    .container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+      }
+      
+      /* Then style the iframe to fit in the container div with full height and width */
+    .responsive-iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+      }
+}
+
+@media screen and (max-width:1024px) {
+    .google-adsprt {
+        max-width: 300px;
+        height: 600px;
+        margin-top: 20px;
+        position: sticky;
+        top: 20px;
+        align-self: flex-start;
+        display: none;
+    }
+    .content {
+        width: 89%;
+        padding: 0px 20px;
+        height: 100%;
+    }
+    .wrapper2 {
+        max-width: 89%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgb(0 0 0 / 10%) 0px 15px 20px;
+        padding: 30px;
+        border-radius: 5px;
+        overflow: hidden;
+        margin: auto;
+    }
+    .form-container1 {
+        position: absolute;
+        top: 15%;
+        max-width: 494px;
+        left: 21%;
+        overflow: hidden;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .form-container1 {
+        position: absolute;
+        top: 15%;
+        max-width: 376px;
+        left: 19%;
+        overflow: hidden;
+    }
+    .dashboard-content {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-gap: 2em;
+        margin-top: 20px;
+    }
+    .footer .footer-content {
+        display: flex;
+        margin: auto;
+        max-width: 1200px;
+        width: 100%;
+        flex-direction: column;
+    }
+    .footer-links {
+        /* max-width: 205px; */
+        width: 100%;
+        margin-top: 1em;
+        padding: 0 49px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+        width: 99%;
+        padding: 0px 20px;
+        height: 100%;
+    }
+    .user-form {
+        text-align: center;
+        background-color: rgb(255, 255, 255);
+        padding: 0px;
+        margin: auto;
+        border-radius: 30px;
+    }
+    .wrapper2 {
+        max-width: 89%;
+        background-color: rgb(255, 255, 255);
+        box-shadow: rgb(0 0 0 / 10%) 0px 15px 20px;
+        padding: 8px;
+        border-radius: 5px;
+        overflow: hidden;
+        margin: auto;
+    }
+    .logo img {
+        max-width: 81px;
+        cursor: pointer;
+        padding: 10px;
+    }
+    .header-section {
+        display: flex;
+        align-items: inherit;
+        justify-content: space-between;
+    }
+    header {
+        height: 80px;
+    }
+    .verification-form {
+        background: rgb(255, 255, 255);
+        margin-top: 20px;
+        border-radius: 30px;
+        padding: 55px 0px;
+        position: relative;
+    }
+    .form-container {
+        width: 88%;
+        overflow: hidden;
+        margin: auto;
+    }
+    .form-container1 {
+        position: absolute;
+        top: 11%;
+        max-width: 193px;
+        left: 19%;
+        overflow: hidden;
+    }
+    html {
+        font-size: 10px;
+    }
+    .dashboard-content {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-gap: 2em;
+        margin-top: 20px;
+    }
+}
